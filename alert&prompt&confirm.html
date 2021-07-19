@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- alert -->
+    <button onclick="alertfunction()">Alert Box</button>
+    <!-- prompt -->
+    <form>
+        <input type="button" value="clickme" onclick="promptfunction()">
+    </form>
+    <!-- confirm box -->
+    <button onclick="confirmfunction()">Click to confirm changes</button>
+    <!-- <script> -->
+    <script>
+        function alertfunction() {
+            alert("Hello uh are learning javascript");
+        }
+
+        function promptfunction() {
+            var value = prompt("Enter your name", "name");
+            document.write("You have entered " + value + " ");
+        }
+
+        function confirmfunction() {
+            confirm("Press any key to confirm changes");
+        }
+    </script>
+</body>
+
+</html>

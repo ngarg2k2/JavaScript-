@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Page</title>
+</head>
+
+<body>
+    <h1>This is a confirmation Page</h1>
+    <form action="#">
+        <input type="button" value="Click Me" onclick="confirmfunction()">
+    </form>
+    <script>
+        function confirmfunction() {
+            var con = confirm("Do you want to continue or not");
+
+            if (con == true) {
+                document.write("User want to confirm the changes");
+                return true;
+            } else {
+                document.write("User want to revert the changes");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

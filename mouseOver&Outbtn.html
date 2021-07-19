@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over & Out Btn</title>
+</head>
+
+<body>
+    <div onmouseover="over()">
+        <h1>This is mouse over event</h1>
+    </div>
+    <input type="button" value="Mouse Out" onmouseout="out()">
+
+    <script>
+        function over() {
+            document.write("This is mouser over event");
+        }
+
+        function out() {
+            document.write("This is mouser out event");
+        }
+    </script>
+</body>
+
+</html>

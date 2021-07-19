@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Based JavaScript</title>
+</head>
+
+<body>
+    <script>
+        const human = {
+            f_name: 'Nipun',
+            l_name: 'Garg',
+            age: 19,
+            SayName() {
+                document.write("Hello,I am Nipun Garg")
+            }
+        }
+        human.SayName();
+        document.write(human.f_name, "<br>");
+        document.write(human.l_name, "<br>");
+        // console.log(human.hasownproperty("age"));
+    </script>
+
+    <script>
+        var user = {
+            email: "abc@abc.com",
+            name: "abc",
+            login() {
+                document.write(this.email, " has been logged in")
+            },
+            logout() {
+                document.write(this.email, " has been logged out")
+            }
+        }
+        user.login();
+        document.write("<br>");
+        user.logout();
+    </script>
+
+</body>
+
+</html>
