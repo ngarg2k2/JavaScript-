@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+
+<body>
+    <!-- <script>
+        class employee {
+            setEmployeeDetails(name, id, dis) {
+                this.name = name;
+                this.id = id;
+                this.dis = dis;
+            }
+            getEmpName(name) {
+                return this.name;
+            }
+            getEmpid(id) {
+                return this.id;
+            }
+            getEmpdis(dis) {
+                return this.dis;
+            }
+        }
+        let emp = new employee();
+        emp.setEmployeeDetails("Nipun", 14, "Student");
+        document.write(emp.getEmpName());
+        document.write(emp.getEmpdis());
+        document.write(emp.getEmpid());
+    </script> -->
+    <script>
+        class student {
+            constructor() {
+                var name;
+                var marks;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name = name;
+            }
+            getMarks() {
+                return this.marks;
+            }
+            setMarks(marks) {
+                if (marks < 0 || marks > 100) {
+                    alert("Invalid Marks");
+                } else {
+                    this.marks = marks;
+                }
+            }
+        }
+        var std = new student;
+        std.setName("Nipun");
+        std.setMarks("10");
+        document.write(std.getName());
+        document.write("<br>");
+        document.write(std.getMarks());
+    </script>
+</body>
+
+</html>
